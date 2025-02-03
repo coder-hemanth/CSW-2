@@ -23,7 +23,7 @@ class ImageLibrary {
 
     public Image searchImage(String colorCode) {
         for (int i = 0; i < size; i++) {
-            if (images[i].getColorCode().equals(colorCode)) {
+            if (images[i].getColorCode().equalsIgnoreCase(colorCode)) {
                 return images[i];
             }
         }
